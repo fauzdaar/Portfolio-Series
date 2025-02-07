@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #39ff14;
-    color: black;
+    background-color: chocolate;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -55,6 +55,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -62,7 +63,7 @@ h2 {
     font-size: 2rem;
     font-family: "Georgia", serif;
     text-align: center;
-    border-bottom: 3px solid #39ff14;
+    border-bottom: 3px solid chocolate;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -86,7 +87,7 @@ h2 {
 
 #about p {
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
 
@@ -118,7 +119,7 @@ h2 {
 }
 
 #contact a {
-    color: #4CAF50;
+    color: chocolate;
     text-decoration: none;
 }
 
