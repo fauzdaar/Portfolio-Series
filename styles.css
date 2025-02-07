@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    padding-bottom: 60px; /* Added bottom padding to make room for the footer */
 }
 
 header {
@@ -79,18 +80,24 @@ section {
     line-height: 1.6;
 }
 
-#contact button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+#contact {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds margin at the bottom */
 }
 
-#contact button:hover {
-    background-color: #45a049;
+#contact p {
+    font-size: 1.1rem;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -99,7 +106,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+    clear: both; 
 }
