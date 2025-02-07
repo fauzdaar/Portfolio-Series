@@ -4,29 +4,32 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     padding-bottom: 60px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-header {
-    background-color: chocolate;
+.hero {
+    background: chocolate;
     color: white;
-    padding: 20px;
     text-align: center;
-    position: relative;
+    padding: 50px 20px;
 }
 
-header h1 {
+.hero h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
 }
 
-header p {
+.hero .hi {
+    opacity: 0.7;
+}
+
+.hero p {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.menu-toggle {
-    display: none;
+.menu-toggle, .dark-mode-toggle {
     position: fixed;
     top: 15px;
     right: 20px;
@@ -38,6 +41,10 @@ header p {
     border-radius: 8px;
     cursor: pointer;
     z-index: 1001;
+}
+
+.dark-mode-toggle {
+    right: 60px;
 }
 
 nav {
@@ -94,11 +101,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     transition: background-color 0.3s ease-in-out;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
 }
 
 #about:hover {
@@ -115,7 +117,6 @@ h2 {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    max-width: 600px;
 }
 
 #contact a {
@@ -135,32 +136,25 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: #333;
-        position: absolute;
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 60px;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+.dark-mode .hero {
+    background-color: #444;
+}
 
-    nav ul.active {
-        display: flex;
-    }
+.dark-mode nav {
+    background-color: #555;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
-    }
+.dark-mode #about {
+    background-color: #333;
+    color: #ddd;
+}
+
+.dark-mode footer {
+    background-color: #555;
+}
