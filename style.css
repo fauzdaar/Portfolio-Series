@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: chocolate;
-    color: black;
+    color: white;
     padding: 20px;
     text-align: center;
     position: relative;
@@ -17,22 +17,27 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: white;
 }
 
 header p {
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .menu-toggle {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 20px;
     font-size: 1.5rem;
-    background: none;
+    background-color: #333;
+    color: white;
     border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 nav {
@@ -142,10 +147,13 @@ footer {
         text-align: center;
         background-color: #333;
         position: absolute;
-        width: 100%;
-        left: 0;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
         top: 60px;
-        padding: 0;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     nav ul.active {
@@ -155,4 +163,4 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
-}
+    }
