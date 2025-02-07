@@ -1,5 +1,5 @@
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector("nav ul");
 const darkModeToggle = document.querySelector(".dark-mode-toggle");
 const body = document.body;
 
