@@ -57,15 +57,37 @@ section {
     margin: 20px;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+    border-bottom: 3px solid #39ff14;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 #about {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#about:hover {
+    background-color: #e0e0e0;
 }
 
 #about img {
     border-radius: 50%;
     margin-right: 20px;
+}
+
+#about p {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
 }
 
 #projects ul {
