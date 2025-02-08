@@ -4,13 +4,20 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f9;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section (Full Screen) */
 .hero {
     background-color: chocolate;
     color: white;
-    padding: 50px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hi {
@@ -21,17 +28,27 @@ body {
 nav {
     background-color: #333;
     padding: 10px;
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav.show {
+    display: block;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 10px 0;
 }
 
 .nav-links li a {
@@ -58,13 +75,48 @@ nav {
     left: 15px;
 }
 
-/* Sections */
+/* Section Cards */
 section {
     padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
 }
 
+section:hover {
+    transform: scale(1.05);
+    background: #e0e0e0;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
 }
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+
+.dark-mode section:hover {
+    background: #444;
+}
+
+.dark-mode .menu-toggle, .dark-mode .dark-mode-toggle {
+    background-color: black;
+    color: white;
+    }
