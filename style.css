@@ -30,7 +30,7 @@ nav {
     padding: 10px;
     position: fixed;
     width: 100%;
-    top: 60px; /* Shifted below togglers */
+    top: 60px;
     left: 0;
     z-index: 999;
 }
@@ -59,7 +59,7 @@ nav {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 1000; /* Ensures togglers stay on top */
+    z-index: 1000;
 }
 
 .menu-toggle {
@@ -88,6 +88,16 @@ nav {
 .dark-mode .dark-mode-toggle {
     background-color: white;
     color: black;
+}
+
+/* Dark Mode - Section Background Fix */
+.dark-mode section {
+    background: #222;  /* Darker shade for sections */
+    color: white;
+}
+
+.dark-mode section:hover {
+    background: #333;
 }
 
 /* Section Cards */
@@ -130,7 +140,7 @@ footer {
     }
 
     .menu-toggle {
-        display: none; /* Hide menu toggle in large screens */
+        display: none;
     }
 }
 
@@ -148,4 +158,4 @@ footer {
     .menu-toggle {
         display: block;
     }
-    }
+        }
