@@ -60,7 +60,6 @@ nav.show {
 .menu-toggle, .dark-mode-toggle {
     position: fixed;
     top: 15px;
-    background-color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -69,10 +68,14 @@ nav.show {
 
 .menu-toggle {
     right: 15px;
+    background-color: white;
+    color: black;
 }
 
 .dark-mode-toggle {
     left: 15px;
+    background-color: black;
+    color: white;
 }
 
 /* Section Cards */
@@ -88,6 +91,17 @@ section {
 section:hover {
     transform: scale(1.05);
     background: #e0e0e0;
+}
+
+/* Contact Section */
+#contact a {
+    color: chocolate;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -116,7 +130,39 @@ footer {
     background: #444;
 }
 
-.dark-mode .menu-toggle, .dark-mode .dark-mode-toggle {
+/* Invert Toggle Button Colors in Dark Mode */
+.dark-mode .menu-toggle {
     background-color: black;
     color: white;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .dark-mode-toggle {
+        display: block;
+    }
     }
