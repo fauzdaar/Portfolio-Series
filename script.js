@@ -1,23 +1,12 @@
-const menuToggler = document.getElementById("menu-toggler");
-const menu = document.getElementById("menu");
-const themeToggler = document.getElementById("theme-toggler");
-
-menuToggler.addEventListener("click", () => {
-    menu.classList.toggle("show");
+// Dark Mode Toggle
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
 });
 
-themeToggler.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    themeToggler.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+// Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
 });
-
-window.addEventListener("resize", () => {
-    if (window.innerWidth < 768) {
-        menuToggler.style.display = "block";
-    } else {
-        menuToggler.style.display = "none";
-        menu.classList.remove("show");
-    }
-});
-
-window.dispatchEvent(new Event("resize"));
