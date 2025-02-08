@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Kumar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1><span class="hi">HI! </span> I'M ABHISHEK KUMAR</h1>
+    <button class="menu-toggle">☰</button>
+    <button class="dark-mode-toggle">🌙</button>
+
+    <header class="hero">
+        <h1><span class="hi">HI!</span> I'M ABHISHEK KUMAR</h1>
         <p>Web Developer | Programmer | Tech Enthusiast</p>
     </header>
 
-    <button id="theme-toggler">🌙</button>
-    <button id="menu-toggler">☰</button>
-
-    <nav id="menu">
-        <ul>
+    <nav>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
@@ -27,10 +26,8 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-content">
-            <img src="Profile.jpg" alt="Abhishek Kumar">
-            <p>Hello! I’m Abhishek Kumar, a passionate Web Developer with a keen interest in building clean and functional websites...</p>
-        </div>
+        <img src="Profile.jpg" alt="Abhishek Kumar" width="200">
+        <p>Hello! I’m Abhishek Kumar, a passionate Web Developer with a keen interest in building clean and functional websites.</p>
     </section>
 
     <section id="projects">
@@ -44,20 +41,18 @@
 
     <section id="education">
         <h2>Education</h2>
-        <p><strong>Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)</strong><br>
-        Year of Graduation: 2021<br>
-        University: Rajasthan Technical University, Kota<br>
-        Institution: Poornima College of Engineering, Jaipur</p>
+        <p>Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)</p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:jat.abhishek.99@gmail.com">jat.abhishek.99@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/abhishek-kumar-06774a149" target="_blank">Abhishek Kumar</a></p>
     </section>
 
     <footer>
         <p>© 2025 Abhishek Kumar. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-    </html>
+</html>
