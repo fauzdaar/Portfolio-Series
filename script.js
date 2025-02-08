@@ -1,17 +1,23 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
-const darkModeToggle = document.querySelector(".dark-mode-toggle");
-const body = document.body;
+const menuToggler = document.getElementById("menu-toggler");
+const menu = document.getElementById("menu");
+const themeToggler = document.getElementById("theme-toggler");
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-    if (nav.classList.contains("show")) {
-        nav.style.display = "flex";
+menuToggler.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+themeToggler.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    themeToggler.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth < 768) {
+        menuToggler.style.display = "block";
     } else {
-        nav.style.display = "none";
+        menuToggler.style.display = "none";
+        menu.classList.remove("show");
     }
 });
 
-darkModeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-});
+window.dispatchEvent(new Event("resize"));
