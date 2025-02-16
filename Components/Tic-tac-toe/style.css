@@ -2,6 +2,26 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Back Arrow */
+.back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: chocolate;
+    font-weight: bold;
+}
+.back-arrow:hover {
+    color: darkred;
 }
 
 h1 {
@@ -14,6 +34,7 @@ h1 {
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
     justify-content: center;
+    align-items: center;
     margin: 20px auto;
 }
 
@@ -34,6 +55,15 @@ h1 {
 
 .cell:hover {
     background: #e0e0e0;
+}
+
+/* Colors for X and O */
+.cell.X {
+    color: red;
+}
+
+.cell.O {
+    color: blue;
 }
 
 .status {
