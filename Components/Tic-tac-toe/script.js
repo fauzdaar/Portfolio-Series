@@ -34,6 +34,7 @@ function handleClick(event) {
 
     board[index] = currentPlayer;
     event.target.textContent = currentPlayer;
+event.target.style.color = currentPlayer === "X" ? "red" : "blue";
 
     checkWinner();
     currentPlayer = currentPlayer === "X" ? "O" : "X";
