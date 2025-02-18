@@ -9,6 +9,6 @@ This repository documents my journey of learning web development by building a p
 - **Day 3:** Exploring JavaScript for interactivity  
 - **And more...**
 
-🌐 **Live Website:** [Click here](https://fauzdaar.github.io/Portfolio-Series/Index)  
+🌐 **Live Website:** [Click here](https://fauzdaar.github.io/Portfolio-Series/Web/Index)  
 
 I'm continuously improving and updating this project. Feedback and suggestions are welcome!
